@@ -1,17 +1,14 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { CounterComponent } from "./counter/counter.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [CounterComponent],
   template: `
-    <h1>Welcome to {{title}}!</h1>
-
-    <router-outlet />
+<app-counter></app-counter>
   `,
   styles: [],
 })
 export class AppComponent {
-  title = 'day-02-counter';
 }
