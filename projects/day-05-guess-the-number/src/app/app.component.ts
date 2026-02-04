@@ -1,14 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { GuessTheNumberComponent } from "./guess-the-number/guess-the-number.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [ GuessTheNumberComponent],
   template: `
-    <h1>Welcome to {{title}}!</h1>
-
-    <router-outlet />
+<app-guess-the-number></app-guess-the-number>
   `,
   styles: [],
 })
