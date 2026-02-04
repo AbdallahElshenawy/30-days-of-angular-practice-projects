@@ -1,14 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { DynamicFilterListComponent } from "./dynamic-filter-list/dynamic-filter-list.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [ DynamicFilterListComponent],
   template: `
-    <h1>Welcome to {{title}}!</h1>
-
-    <router-outlet />
+ <app-dynamic-filter-list></app-dynamic-filter-list>
   `,
   styles: [],
 })

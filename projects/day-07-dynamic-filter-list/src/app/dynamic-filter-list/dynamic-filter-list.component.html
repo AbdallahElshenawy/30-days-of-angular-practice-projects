@@ -1,0 +1,8 @@
+<div class="container">
+  <h1 class="title">Dynamic Filter List</h1>
+  <input type="text" placeholder="Search Tutorials..."
+  class="form-control search-box" [(ngModel)]="searchText"/>
+  <ul class="list-group">
+    <li *ngFor="let item of items | filter:searchText" class="list-group-item">{{item}}</li>
+  </ul>
+</div>
