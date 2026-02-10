@@ -1,14 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { JokeComponent } from "./joke/joke.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [ JokeComponent],
   template: `
-    <h1>Welcome to {{title}}!</h1>
-
-    <router-outlet />
+    <app-joke></app-joke>
   `,
   styles: [],
 })
