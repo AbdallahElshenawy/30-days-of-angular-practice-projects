@@ -1,14 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { FagAccordionComponent } from "./fag-accordion/fag-accordion.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [ FagAccordionComponent],
   template: `
-    <h1>Welcome to {{title}}!</h1>
-
-    <router-outlet />
+  <app-fag-accordion></app-fag-accordion>
   `,
   styles: [],
 })
